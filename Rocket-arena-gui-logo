@@ -1,0 +1,114 @@
+local ScreenGui    = Instance.new("ScreenGui")
+local RocketRoyale = Instance.new("ImageLabel")
+local Roli         = Instance.new("TextLabel")
+local Me           = Instance.new("ImageLabel")
+local ScriptGetter = Instance.new("TextLabel")
+
+
+ScreenGui.Parent = game.CoreGui
+
+RocketRoyale.Name = "Rocket Royale"
+RocketRoyale.Parent = ScreenGui
+RocketRoyale.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RocketRoyale.BackgroundTransparency = 1.000
+RocketRoyale.Position = UDim2.new(0.417004049, 0, 0.353873253, 0)
+RocketRoyale.Size = UDim2.new(0, 164, 0, 165)
+RocketRoyale.Image = "http://www.roblox.com/asset/?id=7513383156"
+
+Roli.Name = "Roli"
+Roli.Parent = RocketRoyale
+Roli.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Roli.BackgroundTransparency = 1.000
+Roli.Position = UDim2.new(-0.113409698, 0, -0.24324581, 0)
+Roli.Size = UDim2.new(0, 200, 0, 50)
+Roli.Font = Enum.Font.SourceSans
+Roli.Text = "Made By Rolimonster"
+Roli.TextColor3 = Color3.fromRGB(0, 0, 0)
+Roli.TextSize = 30.000
+
+Me.Name = "Me"
+Me.Parent = ScreenGui
+Me.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Me.BackgroundTransparency = 1.000
+Me.Position = UDim2.new(0.417004049, 0, 0.0616197363, 0)
+Me.Size = UDim2.new(0, 164, 0, 165)
+Me.Image = "http://www.roblox.com/asset/?id=7513477056"
+
+ScriptGetter.Name = "Script Getter"
+ScriptGetter.Parent = ScreenGui
+ScriptGetter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptGetter.BackgroundTransparency = 1.000
+ScriptGetter.Position = UDim2.new(0.388467371, 0, 0.455985934, 0)
+ScriptGetter.Size = UDim2.new(0, 200, 0, 50)
+ScriptGetter.Font = Enum.Font.SourceSans
+ScriptGetter.Text = "Getting Scripts"
+ScriptGetter.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptGetter.TextSize = 30.000
+
+-- Scripts:
+
+local function HRLE_fake_script() -- RocketRoyale.LocalScript 
+    local script = Instance.new('LocalScript', RocketRoyale)
+
+    script.Parent.Visible = true
+    wait (5)
+    script.Parent.Visible = false
+end
+coroutine.wrap(HRLE_fake_script)()
+local function PDHJE_fake_script() -- RocketRoyale.LocalScript 
+    local script = Instance.new('LocalScript', RocketRoyale)
+
+    local blur = Instance.new("BlurEffect", game.Lighting)
+    wait(8)
+    game.Lighting.Blur:Destroy()
+end
+coroutine.wrap(PDHJE_fake_script)()
+local function EYUUYV_fake_script() -- Roli.LocalScript 
+    local script = Instance.new('LocalScript', Roli)
+
+    script.Parent.Visible = true
+    wait(5)
+    script.Parent.Visible = false
+end
+coroutine.wrap(EYUUYV_fake_script)()
+local function UPHI_fake_script() -- Roli.LocalScript 
+    local script = Instance.new('LocalScript', Roli)
+
+    while true do
+        for a = 1,360,1 do
+            wait(0.1)
+            script.Parent.TextColor3 = Color3.fromHSV(a/360,1,1)
+        end
+    end
+end
+coroutine.wrap(UPHI_fake_script)()
+local function UPBAOZ_fake_script() -- RocketRoyale.LocalScript 
+    local script = Instance.new('LocalScript', RocketRoyale)
+
+    while true do
+        for a = 1,360,1 do
+            wait(0.1)
+            script.Parent.ImageColor3 = Color3.fromHSV(a/360,1,1)
+        end
+    end
+end
+coroutine.wrap(UPBAOZ_fake_script)()
+local function ZFPBMZG_fake_script() -- Me.LocalScript 
+    local script = Instance.new('LocalScript', Me)
+
+    script.Parent.Visible = true
+    wait(5)
+    script.Parent.Visible = false
+end
+coroutine.wrap(ZFPBMZG_fake_script)()
+local function GTSGSBX_fake_script() -- ScriptGetter.LocalScript 
+    local script = Instance.new('LocalScript', ScriptGetter)
+
+    script.Parent.Visible = false
+    wait(5)
+    script.Parent.Visible = true
+    wait(3)
+    script.Parent.Visible = false
+end
+coroutine.wrap(GTSGSBX_fake_script)()
+wait(0.1)
